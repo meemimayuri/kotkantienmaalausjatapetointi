@@ -1,0 +1,126 @@
+body {
+    color:black;
+    font-family:Montserrat, sans-serif;
+}
+
+/** mikäli taustakuva ei toimi, backuppina toimii väri **/
+#header {
+    background-image:url("kuvat/maalaustarvikkeet.png");
+    background-color:#c39aa9;
+    text-align:right;
+}
+
+#navi {
+    background-color:#e6e6e6;
+}
+
+/** ylämarginaalia pienennetty että yläpalkki ei vie liian suurta osaa sivusta **/
+h1 {
+    margin-top:-30px;
+}
+
+/** linkkien erottumista korostaakseni tekstissä lisäsin alleviivauksen **/
+a {
+    color:#c39aa9;
+    text-decoration:underline;
+}
+
+a:hover {
+    color:gray;
+}
+
+/** custom määrittely napeille että ne on söpöjä ja sopii teemaan, Bootstrapin omat siniset ei miellyttäneet **/
+.buttoni {
+    background-color:#e6ced8;
+    color:#222222;
+    border-radius:6px;
+    padding:6px 10px;
+    border:1px solid #dee2e6;
+}
+
+/** etusivun väriesittely-elementeille **/
+.tarjous {
+    color:white;
+    width:150px;
+    padding:12px 0 12px 0;
+    text-align:center;
+    display:inline-block;
+    margin:4px 2px;
+}
+
+#lista {
+    padding-left:310px;
+}
+
+/** galleriaa varten **/
+#karusellilaatikko {
+    width:60%;
+    padding:20px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.carousel-item {
+    border:1px solid;
+}
+
+/** jotta kuvateksti erottuisi paremmin, lisäsin taustavärin **/
+.carousel-caption {
+    background-color:rgba(0,0,0,0.6);
+}
+
+/** oletusarvoisesti kartta istui sivulle huonosti, joten parantelin asettelua **/
+#kartta {
+    float:left;
+    margin:0 30px 0 0;
+}
+
+/** värikartan kuvaelementtien asettelu **/
+#huonetausta {
+    position:relative;
+}
+
+#testihuone {
+    position:absolute;
+    margin-top:-720px;
+    margin-left:148px;
+}
+
+/** värikartan nappien määrittelyt, muutamalla värillä on musta teksti paremman erottelun vuoksi, mutta lisäsin ne HTML:n puolella **/
+.nappi {
+    border:#dee2e6 1px solid;
+    color:white;
+    width:150px;
+    padding:12px 0 12px 0;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:16px;
+    margin:4px 2px;
+    cursor:pointer;
+  }
+
+/** footerin linkit & tekstit, pienensin riviväliä **/
+.row {
+    line-height:0.8;
+    background-color:#e6e6e6
+}
+
+/** footer näyttää paremmalta jos keskitän keskimmäisen sarakkeen keskelle ja oikean oikealle **/
+#somet {
+    text-align:center;
+}
+
+#linkit {
+    text-align:right;
+}
+
+/** erilaiset linkit footerissa koska näyttää nätimmältä **/
+.footerlinkki {
+    color:black;
+    text-decoration:none;
+}
+
+.footerlinkki:hover {
+    color:#994c56;
+}
